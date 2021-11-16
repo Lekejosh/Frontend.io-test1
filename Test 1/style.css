@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap');
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Bright-blue)
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* align-items: center;
+    display: flex;
+    justify-content: center; */
+}
+
+h3 {
+    color: var(--Dark-blue);
+}
+
+.first {
+    color: var(--Desaturated-blue);
+}
+
+.container {
+    /* text-align: center;
+    margin: 8% auto;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 60px 40px; */
+    /* max-width: 200px; */
+    /* display: flex;
+    align-items: center; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    margin: 0 auto;
+    display: flex;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card p {
+    padding: 0px 20px;
+}
+
+.container2 {
+    display: relative;
+}
+
+.small-box {
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--Very-pale-blue);
+    padding: 0px 10px;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 95%; */
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: black;
+    /* border: 4px;
+    background-color: var(--Pale-blue); */
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.small-box p {
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+.image-hero {
+    height: 170px;
+    background-image: url(images/illustration-hero.svg);
+    background-size: contain;
+    background-position: center;
+    /* border-radius: 20px 20px 0px 0px; */
+    margin-bottom: 30px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    padding: 15px 15px;
+    width: 85%;
+}
+
+.proceed {
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border-radius: 15px;
+    box-shadow: var(--Desaturated-blue)0px 10px 15px 2px;
+}
+
+.proceed:hover {
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+}
+
+.cancel {
+    background: none;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: var(--Dark-blue)
+}
+
+@media only screen and (max-width:345px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        max-width: 370px;
+        background-image: url(images/pattern-background-mobile.svg);
+        margin: 0 auto;
+    }
+    .image-hero {
+        height: 140px;
+    }
+    .card {
+        width: 297px;
+        height: 492px;
+    }
+    .container {
+        margin: 12% 0 auto;
+    }
+}
